@@ -1,10 +1,15 @@
 
 import tar2zip from 'tar-to-zip';
 
-export default function package2zip(packStream, onlyDist=false) {
+export default function package2zip(packStream, options) {
+    
+    const opts = { ...{
+        distOnly: false
+    }, ...options };
+    
     return tar2zip(packStream, {
-        filter: onlyDist ? distFilter : packageFilter,
-        map: onlyDist ? distMap : packageMap
+        filter: opts.distOnly ? distFilter : packageFilter,
+        map: opts.distOnly ? distMap : packageMap
     })
         .getStream();
 }

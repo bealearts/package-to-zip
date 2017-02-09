@@ -31,7 +31,7 @@ describe('package2zip', () => {
     it('converts package with dist folder', (done) => {
         const writeStream = temp.createWriteStream();
         
-        package2zip(fs.createReadStream('test/fixture/package.tgz'), true)
+        package2zip(fs.createReadStream('test/fixture/package.tgz'), { distOnly: true })
             .pipe(writeStream)
             .on('finish', () => {
                 const zip = new DecompressZip(writeStream.path);
