@@ -10,7 +10,14 @@
     "test": "npm run lint && npm run build && npm run test:unit",
     "postversion": "git push --tags && git push"
   },
-  "author": "",
+  "author": {
+    "name": "David Beale",
+    "url": "http://bealearts.co.uk/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bealearts/package-to-zip.git"
+  },
   "license": "MIT",
   "dependencies": {
     "tar-to-zip": "^1.3.0"
@@ -29,5 +36,9 @@
     "eslint-plugin-import": "^2.2.0",
     "mocha": "^3.2.0",
     "temp": "^0.8.3"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/bealearts/package-to-zip/issues"
+  },
+  "homepage": "https://github.com/bealearts/qpackage-to-zip#readme"
 }
