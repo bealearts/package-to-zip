@@ -5,7 +5,7 @@ Convert an npm package tarball to a zip file
 # Usage
 ```js
 import fs from 'fs';
-;import package2zip from 'package-to-zip';
+import package2zip from 'package-to-zip';
 
 package2zip(fs.createReadStream('./package.tgz'), { distOnly: true })
     .pipe(fs.createWriteStream('./dist.zip'))
