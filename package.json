@@ -1,6 +1,6 @@
 {
   "name": "package-to-zip",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Convert an npm package tarball to a zip file",
   "main": "dist/package2zip.js",
   "scripts": {

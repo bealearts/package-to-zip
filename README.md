@@ -9,7 +9,7 @@ import package2zip from 'package-to-zip';
 
 package2zip(fs.createReadStream('./package.tgz'), { distOnly: true })
     .pipe(fs.createWriteStream('./dist.zip'))
-    .on('finish', console.log('Done!);
+    .on('finish', console.log('Done!');
 ```
 
 
